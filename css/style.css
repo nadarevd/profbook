@@ -1,0 +1,429 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700,500,400italic,500italic,700italic,300italic);
+@keyframes box-image-hover {
+    from {
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+    to {
+        filter: drop-shadow(4px 4px 10px #222);
+        transform: scale(1.1);
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #F4F4F4;
+}
+
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.button_1 {
+    height: 37px;
+    background-color: #CFBA43;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button_1:hover {
+    background-color: #DCCC76;
+}
+
+.button_2 {
+    position: relative;
+    height: 38px;
+    border: 0;
+    background-color: #045495;
+    cursor: pointer;
+    float: right;
+    left: 7px;
+}
+
+.button_2 a {
+    text-decoration: none !important;
+    color: #CFBA43;
+}
+
+.button_2 a:hover {
+    color: #DCCC76;
+}
+
+.dark {
+    padding: 15px;
+    background: #045495;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Header*/
+
+header {
+    background: #045495;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    min-height: 60px;
+    border-bottom: #CFBA43 3px solid;
+}
+
+header #logo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 200px;
+}
+
+header #uwindsor-logo {
+    height: 60px;
+}
+
+header #logo h1 {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #logo {
+    float: left;
+}
+
+header #logo h1 {
+    margin: 0;
+    text-shadow: 5px 5px 10px black;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #CFBA43;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+/* Showcase area*/
+
+.showcase {
+    min-height: 400px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/0/0d/OdetteBldg_University_of_Windsor.jpg") no-repeat 0 80px;
+    position: relative;
+    background-size: 1920px;
+    background-position-y: -600px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: -3;
+}
+
+.showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 6px black;
+}
+
+.showcase p {
+    font-size: 20px;
+    text-shadow: 5px 5px 7px black;
+}
+
+
+/* newsletter */
+
+#newsletter {
+    padding-top: 10px;
+    color: #FFFFFF;
+    background: #045495;
+    border-bottom: #CFBA43 3px solid;
+}
+
+#newsletter .container {
+    height: 75px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text-box {
+    margin-top: 12px;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+}
+
+.text-box a {
+    width: 125px;
+    margin: 0 40px;
+}
+
+
+/* button background */
+
+.btn {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #CFBA43;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(#CFBA43, 15%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+
+}
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.btn-animated
+/* boxes */
+#boxes {
+    background-color: #FFFFF margin-top: 20px;
+}
+#boxes-title {
+    text-align: center;
+}
+#boxes .container {
+    margin: 0 auto;
+}
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 33%;
+    padding-top: 20px;
+}
+#boxes .box p {
+    text-align: center;
+}
+#boxes .box img {
+    width: 90px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+#boxes .box img:hover {
+    animation: box-image-hover .2s forwards;
+}
+
+/*Sidebar*/
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+aside#sidebar .dark {
+    text-align: center;
+}
+
+/*Main-col*/
+article#main-col {
+    float: left;
+    width: 65%;
+}
+article#main-col .page-title {
+    font-size: 30px;
+}
+
+/* footer*/
+footer {
+    padding: 10px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #045495;
+    text-align: center;
+}
+footer a {
+    margin-top: -25px;
+    color: grey;
+}
+
+/* Media Queries*/
+@media (max-width: 768px) {
+    header #logo,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header #logo {
+        justify-content: center;
+    }
+    
+    #newsletter .container {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    #newsletter form input[type="email"],
+    #newsletter form input[type="password"] {
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    
+    #newsletter form button[type="submit"] {
+        margin-top: 10px;
+        height: 30px;
+        width: 313px;
+    }
+    
+    #newsletter h1 {
+        float: none;
+        text-align: center;
+    }
+    
+    .button_2 {
+        float: none;
+        left: 0;
+    }
+}
+
+/*--------------------------------------about.html-------------------------------------*/
+#general article {
+    text-align: center;
+}
+#general article .page-title {
+    font-size: 35px;
+}
+#general article p {
+    margin-top: -30px;
+    text-align: justify;
+}
+#boxes .box p {
+    text-align: center justify;
+    word-wrap: normal;
+}
+
+/*------------------------------------Services.html------------------------------------*/
+
+/*------------------------------------Proflist.html------------------------------------*/
+.boxed {
+    border: 1px solid green;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.boxed img {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.boxed h4 {
+    margin-left: 10px;
+}
+.boxed p {
+    margin-left: 10px;
+}
+.round_image {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*------------------------------------Signup.html------------------------------------*/
+#signup {
+    margin: auto;
+}
+.signup-container {
+    margin: auto;
+    overflow: hidden;
+}
+.signup-container #signup-box {
+    width: 60%;
+    height: 60%;
+    box-shadow: 1px 1px 10px #222;
+}
