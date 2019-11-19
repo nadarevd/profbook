@@ -9,6 +9,8 @@
     <meta name="keywords" content="web design, profbook, index, professor encyclopedia">
     <meta name="author" content="Denis Nadarevic, Emily Boice, Mitchell Sturba, Tony ...">
     <link rel="stylesheet" href="css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/popup.js"></script>
     <title>Profbook | Welcome</title>
 </head>
 
@@ -42,8 +44,38 @@
     <section id="newsletter">
         <div class="container">
             <div class="text-box">
-                <a href="login.html" class="btn btn-white btn-animate">Login</a>
-                <a href="signup.html" class="btn btn-white btn-animate">Sign Up</a>
+
+
+                <a id="myButton1" class="btn btn-white btn-animate">Login</a>
+                <div id="signup-popup" class="popup">
+                    <div id="signup-popup-content">
+                        <span class="exit">&times;</span>
+                        <h1>Login</h1>
+                        <p>Sign into your account. Let's get Organized!</p>
+                        <form>
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                        </form>
+                        <button class="btn-animate" onclick="location.href='profile.html'">Sign In</button>
+                    </div>
+                </div>
+
+
+                <a id="myButton" class="btn btn-white btn-animate">Sign Up</a>
+                <div id="signup-popup-two" class="popup-two">
+                    <div id="signup-popup-content">
+                        <span class="exittwo">&times;</span>
+                        <h1>Get Organized Today!</h1>
+                        <p>You need a UWindsor Account. Authorize it below.</p>
+                        <form>
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                            <input type="password" placeholder="re-type password">
+                        </form>
+                        <button class="btn-animate" onclick="location.href='profile.html'">Sign Up</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
