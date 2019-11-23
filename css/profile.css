@@ -18,7 +18,7 @@ body {
 
 #profile-summary {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     width: 80%;
     margin: 0 auto;
     margin-top: 30px;
@@ -83,17 +83,33 @@ body {
 #your-profile-pic {
     float: left;
     position: relative;
-    top: -40px;
-    margin-left: 10px;
+    top: -30px;
+    margin-left: 20px;
     border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
     border: 1px solid black;
 }
 
 #profile-general-info {
     position: relative;
-    top: 50px;
-    left: 30px;
+    top: 80px;
+    left: 20px;
     transform: translateY(-50%);
+}
+
+.edit {
+    top: -280px;
+    text-decoration: none;
+    background-color: none !important;
+    position: relative;
+    float: right;
+    left: -10px;
+}
+
+.edit img {
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -102,7 +118,7 @@ body {
 .contact {
     position: relative;
     float: right;
-    left: -40px;
+    left: 30px;
 }
 
 footer {

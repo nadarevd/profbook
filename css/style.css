@@ -418,7 +418,7 @@ footer a {
 /*------------------------------------Proflist.html------------------------------------*/
 
 .boxed {
-    border: 1px solid green;
+    border: 1px grey;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
@@ -444,6 +444,16 @@ footer a {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.boxed a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black
+}
+
+.boxed:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 

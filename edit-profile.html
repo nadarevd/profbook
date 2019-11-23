@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- sets the width to the width of the device -->
+    <meta name="description" content="Professional encyclopedia for professors.">
+    <meta name="keywords" content="web design, profbook, index, professor encyclopedia">
+    <meta name="author" content="Denis Nadarevic, Emily Boice, Mitchell Sturba, Tony ...">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/edit-profile-style.css">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="js/image-upload.js"></script>
+    <script src="js/popup.js"></script>
+    <title>Profbook | Welcome</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <img src="images/uw_logo.png" id="uwindsor-logo">
+                <h1><span class="highlight">Prof</span>Book</h1>
+            </div>
+
+
+
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="profList.html">ProfList</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="sc-edprofile">
+        <h1>Edit Profile Form</h1>
+        <div class="sc-container">
+            <div id="profile-container">
+                <img id="profileImage" src="images/default-icon.png">
+            </div>
+            <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="text" placeholder="Email Address" />
+            <input type="password" placeholder="Password" />
+            <textarea placeholder="Bio"></textarea>
+            <select>
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+            <input type="text" placeholder="Facebook Profile URL" />
+            <input type="text" placeholder="Twitter Profile URL" />
+            <input type="text" placeholder="Google+ Profile URL" />
+            <input type="text" placeholder="LinkedIn Profile URL" />
+            <input type="submit" value="Submit Edit" />
+        </div>
+    </div>
+
+
+    <footer>
+        <p>ProfBook, Copyright &copy; 2019</p>
+        <a href="faq.html">FAQ</a>
+        <a href="contactus.html">Contact Us</a>
+    </footer>
+</body>
+
+</html>
