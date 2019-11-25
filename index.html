@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/popup.js"></script>
+	<script src="js/submitRegForm.js"></script>
+	<script src="js/submitLoginForm.js"></script>
     <title>Profbook | Welcome</title>
 </head>
 
@@ -52,11 +54,12 @@
                         <span class="exit">&times;</span>
                         <h1>Login</h1>
                         <p>Sign into your account. Let's get Organized!</p>
-                        <form>
-                            <input type="email" placeholder="email">
-                            <input type="password" placeholder="password">
+                        <form id="loginForm" action="php/loginHandler.php" method='post' accept-charset='UTF-8'>
+                            <input type="email" placeholder="email" name="email" id="loginEmail">
+                            <input type="password" placeholder="password" name="password" id="loginPassword">
+							
                         </form>
-                        <button class="btn-animate" onclick="location.href='profile.html'">Sign In</button>
+                        <button class="btn-animate" onclick="submitLoginForm();">Sign In</button>
                     </div>
                 </div>
 
@@ -67,12 +70,12 @@
                         <span class="exittwo">&times;</span>
                         <h1>Get Organized Today!</h1>
                         <p>You need a UWindsor Account. Authorize it below.</p>
-                        <form>
-                            <input type="email" placeholder="email">
-                            <input type="password" placeholder="password">
-                            <input type="password" placeholder="re-type password">
+                        <form id="signUpForm" action="php/registerHandler.php" method='post' accept-charset='UTF-8'>
+                            <input type="email" placeholder="email" name="email">
+                            <input type="password" placeholder="password" name="password1" id="password1">
+                            <input type="password" placeholder="re-type password" name="password2" id="password2">
                         </form>
-                        <button class="btn-animate" onclick="location.href='profile.html'">Sign Up</button>
+                        <button class="btn-animate" onclick="submitRegForm();">Sign Up</button>
                     </div>
                 </div>
 
